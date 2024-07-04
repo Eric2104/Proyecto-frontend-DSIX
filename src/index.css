@@ -1,0 +1,10 @@
+.claseEjemplo{
+    width: 100%;
+    background-color: bisque;
+    padding: 2rem;
+}
+
+.claseEjemplo h1{
+    color: blue;
+    text-align: center;
+}
