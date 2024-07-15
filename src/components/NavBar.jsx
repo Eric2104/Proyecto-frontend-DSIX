@@ -11,8 +11,8 @@ export default function NavBar() {
     <Link to="/home" className="hover:text-gray-400 transition duration-300 hover:bg-slate-700 p-2 rounded-md">Inicio</Link>
     <Link to={'/electronics'} className="hover:text-gray-400 transition duration-300 hover:bg-slate-700 p-2 rounded-md">Electronicos</Link>
     <Link to={'/joyas'} className="hover:text-gray-400 transition duration-300 hover:bg-slate-700 p-2 rounded-md">Joyeria</Link>
-    <Link to={'/Ropa-Hombre'} className="hover:text-gray-400 transition duration-300 hover:bg-slate-700 p-2 rounded-md">Ropa de Hombre</Link>
-    <Link to={'/Ropa-Mujer'} className="hover:text-gray-400 transition duration-300 hover:bg-slate-700 p-2 rounded-md">Ropa de Mujeres</Link>
+    <Link to={'/rh'} className="hover:text-gray-400 transition duration-300 hover:bg-slate-700 p-2 rounded-md">Ropa de Hombre</Link>
+    <Link to={'/rm'} className="hover:text-gray-400 transition duration-300 hover:bg-slate-700 p-2 rounded-md">Ropa de Mujeres</Link>
   </div>
   <div className="flex items-center space-x-4">
     

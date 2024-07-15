@@ -1,8 +1,3 @@
-import computadoraHero from '/pcGamer.webp';
-import joyas from '/joyas.png'
-import ropaHombre from '/ropaHombre.png'
-import ropaMujer from '/ropaMujeres.png'
-
 const dataHero = [
     {
       "imagen": '/pcGamer.webp',

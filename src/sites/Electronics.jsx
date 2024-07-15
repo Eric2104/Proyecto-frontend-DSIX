@@ -1,5 +1,4 @@
 import React from 'react'
-import Footer from '../sections/Footer.jsx';
 import Producto from '../components/Producto'
 import { electronics } from '../configs/infoProducto'
 
@@ -12,7 +11,6 @@ const Electronics = () => {
           <Producto key={product.id} product={product} />
         ))}
       </div>
-      <Footer />
     </div>
   )
 }
