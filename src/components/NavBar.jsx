@@ -35,7 +35,7 @@ export default function NavBar() {
             </Link>
           </>
         ) : (
-          <Link to="/session" className="hover:text-gray-400 transition duration-300">Registrarse/Login</Link>
+          <Link to="/session" className="hover:text-gray-400 transition duration-300">Login</Link>
         )}
       </div>
     </nav>
