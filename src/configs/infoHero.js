@@ -15,13 +15,13 @@ const dataHero = [
       "imagen": '/ropaHombre.png',
       "titulo": "Ropa de Hombre",
       "descripcion": "Renueva tu estilo con nuestra selección de moda masculina, desde casual hasta elegante.",
-      "enlace": "/Ropa-Hombre"
+      "enlace": "/rh"
     },
     {
       "imagen": '/ropaMujeres.png',
       "titulo": "Ropa de Mujer",
       "descripcion": "Encuentra las últimas tendencias en moda femenina que te harán destacar en cualquier lugar.",
-      "enlace": "Ropa-Mujer"
+      "enlace": "/rm"
     }
   ]
     export default dataHero  

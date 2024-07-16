@@ -9,8 +9,8 @@ const [data, setData] = useState(null)
   useEffect(() => {
     axios.get(url)
       .then((res) => setData(res.data))
-      .catch((error) => console.error("Error fetching data: ", error));
-  }, []);
+      .catch((error) => console.error("Error fetching data: ", error))
+  }, [url]);
 
   return {data};
 } 
