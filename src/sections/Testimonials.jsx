@@ -5,6 +5,11 @@ import responsive from '../configs/carouselConfig.js';
 import iconUser from '/iconUser.svg';
 
 export default function Testimonials() {
+
+
+
+  
+
   return (
     <div className='w-full space-y-4 my-4'>
         <h2 className='font-semibold text-2xl text-gray-600 text-center'>Testimonios</h2>

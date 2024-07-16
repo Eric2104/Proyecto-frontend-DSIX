@@ -2,7 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-.ejemploCSS{
-    text-align: center;
-    font-size: 2em;
-}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .loader {
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 8px solid #1e293b;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+  }

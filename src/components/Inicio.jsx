@@ -5,16 +5,21 @@ import "react-multi-carousel/lib/styles.css";
 import responsive from '../configs/carouselConfig.js';
 import Cards from './Cards.jsx';
 import Testimonials from '../sections/Testimonials.jsx';
-import Footer from '../sections/Footer.jsx';
 import ComprarNosotros from '../sections/ComprarNosotros.jsx';
 import dataHero from '../configs/infoHero.js';
 import {useFetch} from '../hooks/useFetch.js'
 import { Link } from 'react-router-dom';
+import LoadingCards from './LoadingCards.jsx';
 
 export default function Inicio() {
 
-  const {data} = useFetch("https://fakestoreapi.com/products/category/electronics?limit=3");
-  
+  const {data, isLoading, error} = useFetch("https://fakestoreapi.com/products/category/electronics?limit=3");
+
+
+  if(error){
+    return <div>Ha ocurrido un error: {error}</div>
+  }
+
   return (
     <div className='bg-zinc-100'>
         <Carousel 
@@ -29,8 +34,8 @@ export default function Inicio() {
           )
         })}
         </Carousel>
-        <div className='container my-2'>
-        <div className='flex py-8 items-center'>
+        <div className='w-full my-2'>
+          <div className='flex py-8 items-center'>
             <div className='w-1/3 space-y-4 px-6'>
             <h2 className='font-bold text-xl'>Tecnología de última generación</h2>
             <p>
@@ -40,20 +45,19 @@ export default function Inicio() {
               <Link to="/electronics"> Ver categoria </Link>
             </button>
             </div>
-            <div className='w-2/3 flex justify-between '>
+            <div className={`w-2/3 grid ${isLoading?'grid-cols-1 ': 'grid-cols-3'}`}>
 
-            {
-              data?.map((product)=> (
-                <Cards key={product.id} product={product}/>
-              ))
-            }
+              {isLoading ? <LoadingCards/> : data.map((product, index)=>{
+                return(
+                  <Cards key={index} product={product}/>
+                )
+              })}
 
             </div>
-        </div>
+          </div>
         </div>
         <ComprarNosotros />
         <Testimonials />
-        <Footer />
     </div>
   )
 }
