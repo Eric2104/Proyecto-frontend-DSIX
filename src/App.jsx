@@ -10,6 +10,7 @@ import RopaMujer from './sites/RopaMujer'
 import Footer from './sections/Footer' 
 import Login from './components/Login'
 import VerProducto from './sites/VerProducto'
+import Carts from './sites/Carts'
 import { AuthProvider } from './context/AuthContext';
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
             <Route path="/joyas" element={<Joyas />} />
             <Route path="/rh" element={<RopaHombre />} />
             <Route path="/rm" element={<RopaMujer />} />
+            <Route path="/carts" element={<Carts />} />
             <Route path="/session" element={<Login />} />
             <Route path="/ver/:id" element={<VerProducto />} />
             {/* Supongo que para la categoria se deberia crear una ruta para cada una xd*/}

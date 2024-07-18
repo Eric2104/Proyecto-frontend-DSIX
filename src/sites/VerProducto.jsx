@@ -15,8 +15,7 @@ export default function VerProducto() {
   if (error) {
     return <div className="container mx-auto p-4">Error al cargar los productos.</div>;
   }
-
-
+  
   return (
     <div className="container  h-[80vh] flex flex-col md:flex-row justify-between items-center mx-auto p-4 space-y-4 md:space-y-0 md:space-x-4">
       <div className="border-2  w-full md:w-1/2 p-4">
