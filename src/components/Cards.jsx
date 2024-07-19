@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 export default function Cards({ product }) {
   return (
-    <div className="bg-slate-600 text-white p-4 rounded-lg shadow-md mx-2 shadow-md">
+    <div className="bg-slate-600 text-white p-4 rounded-lg mx-2 shadow-md">
       <div className="w-full text-center">
         <img
           src={product.image}
