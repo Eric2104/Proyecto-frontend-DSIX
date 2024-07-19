@@ -4,8 +4,8 @@ import axios from 'axios'
 
 export const useFetch = (url) => {
 const [data, setData] = useState(null)
-const [isLoading, setIsLoading] = useState(true);//codigo agregado eric
-const [error, setError] = useState(null);//codigo agregado eric
+const [isLoading, setIsLoading] = useState(true);
+const [error, setError] = useState(null);
 
 useEffect(() => {
   const fetchProducts = async () => {

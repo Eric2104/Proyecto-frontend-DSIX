@@ -1,7 +1,7 @@
 import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import useTestimonialFetch from '../hooks/TestimonialFetch.js';
+import useTestimonialFetch from '../API/TestimonialFetch.js';
 import responsive from '../configs/carouselConfig.js';
 import iconUser from '/iconUser.svg';
 

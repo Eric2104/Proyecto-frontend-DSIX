@@ -9,11 +9,10 @@ export default function Carts() {
     if (isLoading) {
         return     <Loading/>
     }
-    console.log(data[0])
     
-      if (error) {
+    if (error) {
         return <div className="container mx-auto p-4">Error al cargar los productos.</div>;
-      }
+    }
 
   return (
     <div className='container mx-auto p-4 min-h-screen '>

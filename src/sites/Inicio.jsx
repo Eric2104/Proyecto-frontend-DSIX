@@ -1,15 +1,14 @@
-import {} from 'react'
-import Hero from './Hero.jsx'
+import Hero from '../components/Hero.jsx'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import responsive from '../configs/carouselConfig.js';
-import Cards from './Cards.jsx';
+import Cards from '../components/Cards.jsx';
 import Testimonials from '../sections/Testimonials.jsx';
 import ComprarNosotros from '../sections/ComprarNosotros.jsx';
 import dataHero from '../configs/infoHero.js';
-import {useFetch} from '../hooks/useFetch.js'
+import {useFetch} from '../API/useFetch.js'
 import { Link } from 'react-router-dom';
-import LoadingCards from './LoadingCards.jsx';
+import LoadingCards from '../components/LoadingCards.jsx';
 
 export default function Inicio() {
 
@@ -30,7 +29,7 @@ export default function Inicio() {
         >
         {dataHero.map((item, index)=>{
           return(
-            <Hero key={index} imagen={item.imagen} titulo={item.titulo} descripcion={item.descripcion} enlace={item.enlace}/>
+            <Hero  key={index} imagen={item.imagen} titulo={item.titulo} descripcion={item.descripcion} enlace={item.enlace}/>
           )
         })}
         </Carousel>

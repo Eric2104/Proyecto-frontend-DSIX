@@ -3,6 +3,7 @@ import iconHome from '/iconHome.svg';
 import iconArrow from '/iconArrow.svg';
 import iconShop from '/iconShop.svg';
 import iconSupport from '/iconSupport.svg';
+import { motion } from 'framer-motion';
 
 export default function ComprarNosotros() {
   return (
@@ -11,15 +12,15 @@ export default function ComprarNosotros() {
       <h2 className='text-center text-4xl font-bold mb-6'>¿Por qué comprar con nosotros?</h2>
       <div className='grid grid-cols-1 md:grid-cols-2 text-center gap-8'>
         
-        <div className='bg-gray-100 p-6 rounded-lg shadow-md'>
+        <div className='bg-gray-100 p-6 rounded-lg shadow-md transition-transform duration-100 hover:scale-105'>
           <div className='flex items-center justify-center mb-4'>
-            <img src={iconHome} alt='Entrega a domicilio' className='w-12 h-12'/>
+            <img src={iconHome} alt='Entrega a domicilio' className='w-12 h-12 '/>
           </div>
           <h3 className='text-xl font-semibold mb-2'>Entrega a domicilio</h3>
           <p className='text-gray-600'>Disfruta de nuestras rápidas y seguras entregas directamente a tu puerta.</p>
         </div>
 
-        <div className='bg-gray-100 p-6 rounded-lg shadow-md'>
+        <div className='bg-gray-100 p-6 rounded-lg shadow-md transition-transform duration-200 hover:scale-105'>
           <div className='flex items-center justify-center mb-4'>
             <img src={iconArrow} alt='Fácil devoluciones' className='w-12 h-12'/>
           </div>
@@ -27,7 +28,7 @@ export default function ComprarNosotros() {
           <p className='text-gray-600'>Devolver productos es sencillo y sin complicaciones con nuestro servicio.</p>
         </div>
 
-        <div className='bg-gray-100 p-6 rounded-lg shadow-md'>
+        <div className='bg-gray-100 p-6 rounded-lg shadow-md transition-transform duration-200 hover:scale-105'>
           <div className='flex items-center justify-center mb-4'>
             <img src={iconShop} alt='Fácil de comprar' className='w-12 h-12'/>
           </div>
@@ -35,7 +36,7 @@ export default function ComprarNosotros() {
           <p className='text-gray-600'>Navega y compra con facilidad en nuestra plataforma intuitiva.</p>
         </div>
 
-        <div className='bg-gray-100 p-6 rounded-lg shadow-md'>
+        <div className='bg-gray-100 p-6 rounded-lg shadow-md transition-transform duration-200 hover:scale-105'>
           <div className='flex items-center justify-center mb-4'>
             <img src={iconSupport} alt='Soporte 24/7' className='w-12 h-12'/>
           </div>

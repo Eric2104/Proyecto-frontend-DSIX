@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
-import { useFetch } from '../hooks/useFetch';
+import { useFetch } from '../API/useFetch';
 import Loading from '../components/Loading';
 
 export default function VerProducto() {

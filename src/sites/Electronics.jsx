@@ -1,5 +1,5 @@
 import Producto from '../components/Producto'
-import { useFetch } from '../hooks/useFetch'
+import { useFetch } from '../API/useFetch'
 import Loading from '../components/Loading';
 import Pagination from '../components/Pagination';
 
